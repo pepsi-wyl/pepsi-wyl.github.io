@@ -5,13 +5,8 @@
   <meta charset="UTF-8">
   <title>爱心跳动,3D拖拽搬</title>
   <link rel="stylesheet" href="./css/style.css">
-
 </head>
-<h1>爱心跳动,抖音ID:不吃蟹黄 作品参考bootstrapmb,引入three基于canvas制作</h1>
-<!-- 抖音ID:不吃蟹黄 -->
-
 <body>
-
   <script src='./js/three.min.js'></script>
   <!-- <script src='./js/MeshSurfaceSampler.js'></script> -->
   <script src='./js/TrackballControls.js'></script>
@@ -19,33 +14,19 @@
   <script src='./js/OBJLoader.js'></script>
   <script src='./js/gsap.min.js'></script>
   <script src="./js/script.js"></script>
-
-
   <script>
-
-
     (function () {
       const _face = new THREE.Triangle();
-
       const _color = new THREE.Vector3();
-
       class MeshSurfaceSampler {
-
         constructor(mesh) {
-
           let geometry = mesh.geometry;
-
           if (!geometry.isBufferGeometry || geometry.attributes.position.itemSize !== 3) {
-
             throw new Error('THREE.MeshSurfaceSampler: Requires BufferGeometry triangle mesh.');
-
           }
-
           if (geometry.index) {
-
             console.warn('THREE.MeshSurfaceSampler: Converting geometry to non-indexed BufferGeometry.');
             geometry = geometry.toNonIndexed();
-
           }
 
           this.geometry = geometry;
