@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>rebase © pepsiwyl</title>
+      <link href="/2023/11/14/rebase-%C2%A9-pepsiwyl/"/>
+      <url>/2023/11/14/rebase-%C2%A9-pepsiwyl/</url>
+      
+        <content type="html"><![CDATA[<h2 id="合并分支-Merge-VS-Rebase"><a href="#合并分支-Merge-VS-Rebase" class="headerlink" title="合并分支-Merge VS Rebase"></a>合并分支-Merge VS Rebase</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p>文章<br /><a href="https://deepinout.com/git/git-questions/426_git_whats_the_difference_between_git_merge_and_git_rebase.html">Git ‘merge’ 和 ‘rebase’ 之间的区别|极客笔记</a><br><a href="https://blog.csdn.net/weixin_42310154/article/details/119004977">git rebase详解（图解+最简单示例，一次就懂）-CSDN博客</a><br><a href="https://www.cnblogs.com/michael-xiang/p/13179837.html">图解 Git 基本命令 merge 和 rebase - Michael翔 - 博客园</a><br>视频<br /><a href="https://www.bilibili.com/video/BV1Bg41167Zi/?spm_id_from=333.999.0.0&vd_source=d6c267f5e56771009ec98cfb62fcff49">【IT老齐235】Git Rebase vs Git Merge，代码合并到底用哪个？_哔哩哔哩_bilibili</a><br><a href="https://www.bilibili.com/video/BV1VG411F7rB/?spm_id_from=333.788.recommend_more_video.2&vd_source=d6c267f5e56771009ec98cfb62fcff49">五分钟学会git rebase和 git merge的区别_哔哩哔哩_bilibili</a><br><a href="https://www.bilibili.com/video/BV1Ur4y1q7xB/?spm_id_from=333.788.recommend_more_video.6&vd_source=d6c267f5e56771009ec98cfb62fcff49">git常用操作–git rebase和git merge_哔哩哔哩_bilibili</a><br><a href="https://www.bilibili.com/video/BV19B4y1u7vm/?spm_id_from=333.788.recommend_more_video.4&vd_source=d6c267f5e56771009ec98cfb62fcff49">不会使用 git rebase 合并代码？这位颜值颇高的程序员被公司开除了 #83_哔哩哔哩_bilibili</a></p><h3 id="marge和rebase图解"><a href="#marge和rebase图解" class="headerlink" title="marge和rebase图解"></a>marge和rebase图解</h3><h4 id="merge"><a href="#merge" class="headerlink" title="merge"></a>merge</h4><p>将dev分支merge到master分支上<br /><img src="/2023/11/14/rebase-%C2%A9-pepsiwyl/1699928387365-15aa3032-b0ba-4f77-ac0f-4251cde82e90.png" class=""><br>将master分支merge到dev分支上<br /><img src="/2023/11/14/rebase-%C2%A9-pepsiwyl/1699928729471-88164ac5-2e2e-4aa5-96fb-75fd01539234.png" class=""></p><h4 id="rebase"><a href="#rebase" class="headerlink" title="rebase"></a>rebase</h4><p>将master分支以dev进行变基<br /><img src="/2023/11/14/rebase-%C2%A9-pepsiwyl/1699929915911-a8ae491b-8200-4b74-94c8-e3735fbf085e.png" class=""><br>将dev分支以master进行变基<br /><img src="/2023/11/14/rebase-%C2%A9-pepsiwyl/1699929934981-57dc2dfa-4974-40d6-9334-1bdb2823e84b.png" class=""></p><p>rebase 关键在于「基」，git rebase &lt;基分支&gt;，就是将当前基分支与当前分支的差异提交获取到，然后在「基分支」最新提交点后面将差异提交逐个再次提交，最后将当前分支的 HEAD 指针指向最新的提交点。「基分支」的 HEAD 位置是不变的，要想完成分支合并，完成变基之后，还需要再进行分支间的合并等操作。</p><h3 id="优缺点及比较"><a href="#优缺点及比较" class="headerlink" title="优缺点及比较"></a>优缺点及比较</h3><img src="/2023/11/14/rebase-%C2%A9-pepsiwyl/1699878741062-3163180d-0d27-45b0-9c34-5204c257b7e0.png" class=""><h3 id="使用场景建议"><a href="#使用场景建议" class="headerlink" title="使用场景建议"></a>使用场景建议</h3><p>子分支上执行  - rebase  master   相当于子分支拉取最新的公共分支代码</p><img src="/2023/11/14/rebase-%C2%A9-pepsiwyl/1699885708092-ba5392bb-741c-46dd-a06e-45589e9b1015.png" class=""><p>master分支上执行 - merge 子分支  相当于将子分支代码合并到公共分支上</p><img src="/2023/11/14/rebase-%C2%A9-pepsiwyl/1699885665103-65c8f1a5-b3cc-44af-929a-ceffe6d6ca69.png" class=""><h2 id="压缩commit-Rebase"><a href="#压缩commit-Rebase" class="headerlink" title="压缩commit-Rebase"></a>压缩commit-Rebase</h2><p><a href="https://blog.csdn.net/weixin_44756333/article/details/122977109">使用IDEA Git把多次提交合并成一次操作_idea 如何将远程仓库多次提交改为单次-CSDN博客</a><br><a href="https://blog.csdn.net/luomo0203/article/details/111771015">IDEA中将多次commit合并为一次后push到远程仓库_多次commit一次push-CSDN博客</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> rebase </category>
+          
+          <category> merge </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> rebase </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringSecurity©编程不良人</title>
       <link href="/2023/06/24/SpringSecurity%C2%A9%E7%BC%96%E7%A8%8B%E4%B8%8D%E8%89%AF%E4%BA%BA/"/>
       <url>/2023/06/24/SpringSecurity%C2%A9%E7%BC%96%E7%A8%8B%E4%B8%8D%E8%89%AF%E4%BA%BA/</url>
